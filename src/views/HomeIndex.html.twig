@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1>Books</h1>
+<a href="http://localhost/publisher/index">Publishers</a>
+<br>
+<ul>
+    {% for book in books %}
+        <li>{{ book.title }}</li>
+    {% endfor %}
+</ul>
+<button><a href="http://localhost/user/logout">Logout</a></button>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Books</title>
+</head>
+<body>
+<h3>Books</h3>
+
+<table class="tableBorder">
+    <tr>
+        <th class="tableBorder">Title</th>
+        <th class="tableBorder">Author</th>
+        <th class="tableBorder">Publisher</th>
+    </tr>
+        {% for book in books %}
+            <tr>
+                <th>
+                    {{ book.title }}
+                </th>
+                <th>
+                    {{ book.author }}
+                </th>
+                <th>
+                    {{ book.publisher }}
+                </th>
+            </tr>
+        {% endfor %}
+</table>
+
+<a href="http://localhost">Home</a>
+</body>
+</html>
+
+<style>
+    .tableBorder {
+        border: 1px solid black;
+    }
+</style>

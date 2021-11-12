@@ -1,0 +1,7 @@
+{
+    "name": "laurens/htdocs",
+    "require-dev": {
+        "twig/twig": "^1.0",
+        "gabordemooij/redbean": "dev-master"
+    }
+}

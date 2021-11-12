@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Test</title>
+</head>
+<body>
+<h1>Publishers</h1>
+<a href="http://localhost/publisher/add">Add publisher</a>
+<br>
+<ul>
+    {% for publisher in publishers %}
+        <li>{{ publisher.name }}</li>
+    {% endfor %}
+</ul>
+</body>
+</html>
